@@ -9,6 +9,29 @@
   font-family: 'cormorantgaramond';
   src:  url("./cormorantgaramond.woff2") format('woff2'),
 }
+html {
+  height: 100%;
+}
+
+html, body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-y: hidden;
+  font-family: cormorantgaramond-light, cormorantgaramond, cormorant garamond, serif;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #888;
+}
 
 video {
   position: fixed;
@@ -20,50 +43,37 @@ video {
   height: auto; 
   z-index: -100;
   background-size: cover;
-  /*
-  height: 100%;
-  min-width: max-content;
-  max-width: max-content;
-  */
-  
 }
 
-html, body {
+main.homepage {
   width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
-}
-
-body {
-  font-family: cormorantgaramond-light, cormorantgaramond, cormorant garamond, serif;
-  overflow-y: hidden;
-  color 
-}
-
-a {
-  color: #000;
-  text-decoration: none;
-}
-a:hover {
-  color: #888;
-}
-
-main {
-  width: 100%;
-  height:100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
 }
 
+main.homepage h1 {
+  font-size: 0px;
+  background: url('logo.webp');
+  width: 289px;
+  height: 47px;
+}
+
+main.impressum, main.privacy {
+  margin: 200px auto 0px auto;
+  width: 700px;
+}
+
+main a {    /* only home link */
+  font-size: 90%;
+  color: #555;
+}
+
 footer {
-  position: absolute;
-  top: 100%;
   width: 100%;
-  height: 10px;
+  height: fit-content;
   text-align: center;
 }
 footer > span {
@@ -74,7 +84,8 @@ footer > span {
   letter-spacing: 0.5em;
 }
 footer nav {
-  margin-top: 150px;
+  padding-top: 150px;
+  height: 40px;
 }
 footer nav a {
   color: #666;
