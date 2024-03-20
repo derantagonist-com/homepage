@@ -60,7 +60,7 @@ main.homepage h1 {
   background-size: contain;
   height: 47px;
   width: 289px;
-  max-width: 70%;
+  max-width: 60%;
 }
 
 main.impressum, main.privacy {
