@@ -56,14 +56,17 @@ main.homepage {
 
 main.homepage h1 {
   font-size: 0px;
-  background: url('logo.webp');
-  width: 289px;
+  background: url(logo.webp) center center;
+  background-size: contain;
   height: 47px;
+  width: 289px;
+  max-width: 70%;
 }
 
 main.impressum, main.privacy {
   margin: 200px auto 0px auto;
-  width: 700px;
+  max-width: 700px;
+  width: 80%;
 }
 
 main a {    /* only home link */
